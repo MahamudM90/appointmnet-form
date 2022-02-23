@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Appointment form</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Demo project" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google fonts -->
+    <link rel="icon" href="assest/lol.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="health-img">
+      <div class="health-form">
+        <div class="form-heading">HEALTH APPOINTMENT FORM</div>
+        <div class="form-left">
+          <form class="form-container">
+            <input
+              type="text"
+              placeholder="Patient's Name"
+              class="input-field"
+            />
+            <input type="email" placeholder="Email" class="input-field" />
+            <input
+              type="number"
+              placeholder="Phone Number"
+              class="input-field noSpinner"
+            />
+            <div class="sex-radio">
+              <label class="sex-label">Sex :</label>
+              <label class="label-container"
+                >Male
+                <input type="radio" name="radio1" class="input-radio" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container"
+                >Female
+                <input type="radio" name="radio1" class="input-radio" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <label class="label-group">
+              <select class="select-field">
+                <option value="" selected>Specialization</option>
+                <option value="">Surgery</option>
+                <option value="">Psychology</option>
+                <option value="">Neurology</option>
+              </select>
+              <span class="select-mark"></span>
+            </label>
+            <label class="label-group">
+              <select class="select-field">
+                <option value="" selected>Choose Hospital</option>
+                <option value="">Queen Elizabeth Hospital</option>
+                <option value="">Newyork Hospital</option>
+                <option value="">DC Hospital</option>
+              </select>
+              <span class="select-mark"></span>
+            </label>
+            <input type="text" placeholder="MM/DD/YYYY" class="input-field" />
+            <label class="medication-lbl"
+              >Taking any medication currently?</label
+            >
+            <div class="sex-radio">
+              <label class="label-container"
+                >Yes
+                <input type="radio" name="radio2" class="input-radio" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="label-container"
+                >No
+                <input type="radio" name="radio2" class="input-radio" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <label class="list-lbl">If yes, please list it.</label>
+            <textarea cols="30" rows="2" class="txt-area"></textarea>
+            <input
+              type="submit"
+              value="Book Appointment"
+              class="input-submit"
+            />
+          </form>
+        </div>
+        <div class="form-right">
+          <img src="images/doctor-img.png" alt="doctor-img" />
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </body>
+</html>

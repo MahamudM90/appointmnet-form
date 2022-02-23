@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.health-img {
+    min-height: 100%;
+    background-image: url(images/health.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.health-form {
+    width: 92%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 30px auto;
+    padding: 30px;
+    overflow: auto;
+}
+
+.form-heading {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-left {
+    width: 100%;
+}
+
+.form-right {
+    display: none;
+}
+
+.form-right img {
+    width: 100%;
+    min-width: 180px;
+    max-width: 200px;
+}
+
+.select-field::-ms-expand {
+    display: none;
+}
+
+.input-field,
+.select-field,
+.txt-area {
+    width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 12px;
+    border: solid rgb(230, 230, 230);
+    border-width: 0 0 1px 0;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    color: rgb(220, 220, 220);
+}
+
+.select-field option {
+    background-color: rgb(250, 71, 54);
+}
+
+.sex-label {
+    padding-right: 20px;
+    color: rgb(240, 240, 240);
+    font-size: 13px;
+}
+
+.sex-radio {
+    margin-bottom: 15px;
+    margin-top: 8px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== radio button style starts ===== */
+
+.label-container {
+    position: relative;
+    padding-left: 22px;
+    margin-left: 10px;
+    margin-top: 6px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+}
+
+/* hide the default radio button */
+.input-radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* create a new radio box */
+.input-radio~.checkmark {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(250, 71, 54);
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* create an indicator or radio dot */
+.input-radio~.checkmark:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(250, 71, 54);
+    top: 2px;
+    left: 2px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    display: none;
+}
+
+.input-radio:checked~.checkmark:after {
+    display: block;
+}
+
+/* ======== radio button style ends ======== */
+
+.medication-lbl {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    color: rgb(240, 240, 240);
+    font-size: 13px;
+}
+
+.list-lbl {
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(240, 240, 240);
+    font-size: 13px;
+}
+
+.form-container ::placeholder {
+    color: rgb(190, 190, 190);
+}
+
+.input-submit {
+    margin-top: 15px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.6px;
+    background-color: rgb(224, 24, 6);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.input-submit:hover {
+    background-color: rgb(250, 71, 54);
+}
+
+/* ====== number field styling ====== */
+/* remove number spin button for Mozilla */
+input[type=number].noSpinner {
+    -moz-appearance: textfield;
+}
+
+/* remove number spin button for Chrome or Safari */
+input[type=number].noSpinner::-webkit-inner-spin-button,
+input[type=number].noSpinner::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* === to remove cross button from IE === */
+::-ms-clear,
+::-ms-reveal {
+    display: none;
+}
+
+/* ====== select field style starts ====== */
+.label-group {
+    position: relative;
+    display: block;
+}
+
+.label-group select~.select-mark:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: solid rgb(180, 180, 180);
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 9px;
+    right: 8px;
+    pointer-events: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.label-group select:hover~.select-mark:after {
+    border-color: rgb(240, 240, 240);
+}
+
+/* === select field style ends === */
+
+/* ===== remvoe scroll bar or textarea in IE ==== */
+.txt-area {
+    overflow: auto;
+}
+
+/* ===== Small devices and most phones ===== */
+@media (min-width: 480px) {
+    .health-form {
+        width: 85%;
+    }
+
+    .form-left {
+        width: 60%;
+        float: left;
+        display: block;
+    }
+
+    .form-right {
+        width: 40%;
+        float: right;
+        display: block;
+    }
+
+    .form-right img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .sex-radio {
+        flex-direction: row;
+    }
+
+    .label-container {
+        margin-top: 0;
+    }
+}
+
+/* ===== most tablets ===== */
+@media (min-width: 768px) {
+    .health-form {
+        width: 60%;
+    }
+}
+
+/* ===== Small desktop viewpoints ===== */
+@media (min-width: 992px) {
+    .health-form {
+        width: 50%;
+    }
+}
+
+/* ==== large devices and wide screen ===== */
+@media (min-width: 1200px) {
+    .health-form {
+        width: 40%;
+    }
+}
+
+/* ===== HD and retina display viewpoints ===== */
+@media (min-width: 1920px) {
+    .health-form {
+        width: 30%;
+    }
+
+    .form-right img {
+        max-width: 200px;
+    }
+}
+
+/* ==== 4K or Ultra HD display ===== */
+@media (min-width: 2560px) {
+    .health-form {
+        width: 25%;
+    }
+}
