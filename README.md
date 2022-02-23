@@ -1,4 +1,5 @@
-## Recipi 🧆
+## Recipi 🧆 
+
 This project was bootstrapped with [Create React App]
 
 ##### HomePage
