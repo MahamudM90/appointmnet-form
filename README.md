@@ -3,16 +3,16 @@
 This project was bootstrapped with [Create React App]
 
 ##### HomePage
-![ScreenShot of Form](screenshorts/a.png)
+![ScreenShot of Form](screenshots/a.png)
 
 ##### SearchPage
-![ScreenShot of Form](screenshorts/b.png)
+![ScreenShot of Form](screenshots/b.png)
 
 ##### Recipi List
-![ScreenShot of Form](screenshorts/c.png)
+![ScreenShot of Form](screenshots/c.png)
 
 ##### Recipi Details
-![ScreenShot of Form](screenshorts/d.png)
+![ScreenShot of Form](screenshots/d.png)
 
 ## Available Scripts
 
