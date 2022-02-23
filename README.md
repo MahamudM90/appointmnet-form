@@ -8,13 +8,6 @@ This project was bootstrapped with [Create React App]
 ##### SearchPage
 ![ScreenShot of Form](screenshots/b.png)
 
-##### Recipi List
-![ScreenShot of Form](screenshots/c.png)
-
-##### Recipi Details
-![ScreenShot of Form](screenshots/d.png)
-
-## Available Scripts
 
 In the project directory, you can run:
 
