@@ -2,8 +2,6 @@
 
 This project was bootstrapped with [Create React App]
 
-##### HomePage
-![ScreenShot of Form](screenshots/a.png)
 
 ##### SearchPage
 ![ScreenShot of Form](screenshots/b.png)
